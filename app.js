@@ -25,7 +25,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
   store: MongoStore.create({
-    mongoUrl: process.env.MONGO_URI
+    mongoUrl: "mongodb+srv://alihassanhaedr:c4a@cluster0.ue5ezcc.mongodb.net/2024dfseeung?retryWrites=true&w=majority"
   }),
   //cookie: { maxAge: new Date ( Date.now() + (3600000) ) } 
 }));
