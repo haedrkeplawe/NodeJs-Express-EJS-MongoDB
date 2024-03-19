@@ -47,7 +47,7 @@ app.use('/', require('./server/routes/admin'));
 
 mongoose
   .connect(
-    process.env.MONGO_URI
+    "mongodb+srv://alihassanhaedr:c4a@cluster0.ue5ezcc.mongodb.net/2024dfseeung?retryWrites=true&w=majority"
   )
   .then(() => {
     app.listen(PORT, () => {
