@@ -13,7 +13,7 @@ const { isActiveRoute } = require('./server/helpers/routeHelpers');
 const app = express();
 const PORT = process.env.PORT || 3500;
 
-
+mongoose.set('strictQuery', true)
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
